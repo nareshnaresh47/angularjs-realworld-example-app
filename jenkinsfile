@@ -10,7 +10,7 @@ pipeline {
     stage('Test') {
       parallel {
         stage('Build') {
-            steps { sh 'npm run-script build' }
+            steps { sh 'npm build' }
         }
      
       }
